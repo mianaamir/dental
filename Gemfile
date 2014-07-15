@@ -7,7 +7,11 @@ gem 'rails', '4.1.1'
 group :production do
   gem 'pg'
 end
+group :development, :test do
+  gem 'sqlite3'
+end
 # Use SCSS for stylesheets
+gem 'heroku'
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
